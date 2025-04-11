@@ -1,0 +1,95 @@
+/* Container styling */
+.ecommerce-container {
+  padding: 40px;
+  background: linear-gradient(135deg, #f5f7fa, #c3cfe2);
+  min-height: 100vh;
+  text-align: center;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Heading style */
+.ecommerce-container h1 {
+  font-size: 2.5rem;
+  margin-bottom: 30px;
+  color: #333;
+  text-transform: capitalize;
+  letter-spacing: 1px;
+  position: relative;
+}
+
+.ecommerce-container h1::after {
+  content: '';
+  display: block;
+  width: 80px;
+  height: 4px;
+  background: linear-gradient(90deg, #3d3330, #fc2c25);
+  margin: 10px auto;
+  border-radius: 2px;
+}
+
+/* Product grid */
+.ecommerce-products {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 30px;
+  padding: 20px;
+}
+
+/* Product card */
+.ecommerce-product-card {
+  background: rgba(255, 255, 255, 0.8);
+  backdrop-filter: blur(10px);
+  border-radius: 15px;
+  padding: 20px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  position: relative;
+}
+
+.ecommerce-product-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.15);
+}
+
+/* Product title */
+.ecommerce-product-card h3 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+  color: #222;
+}
+
+/* Description */
+.ecommerce-product-card p {
+  font-size: 0.95rem;
+  color: #555;
+  margin-bottom: 20px;
+}
+
+/* Button styles */
+.ecommerce-product-card button {
+  background: linear-gradient(90deg, #3d3330, #fc2c25);
+  color: #fff;
+  border: none;
+  padding: 10px 16px;
+  border-radius: 30px;
+  margin: 5px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.ecommerce-product-card button:hover {
+  background: linear-gradient(90deg, #cbbf11, #501412);
+  transform: scale(1.05);
+}
+
+/* Responsive tweaks */
+@media (max-width: 600px) {
+  .ecommerce-container {
+      padding: 20px;
+  }
+
+  .ecommerce-product-card {
+      padding: 15px;
+  }
+}

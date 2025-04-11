@@ -1,0 +1,53 @@
+/* Fade In Animation */
+@keyframes fadeInCenter {
+  0% {
+    opacity: 0;
+    transform: scale(0.95);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+/* 404 Not Found Page */
+.not-found {
+  text-align: center;
+  padding: 80px 20px;
+  background-color: #f8f8f8;
+  animation: fadeInCenter 0.6s ease-in-out;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.not-found h1 {
+  font-size: clamp(48px, 10vw, 100px);
+  color: #ff4f4f;
+  margin-bottom: 20px;
+}
+
+.not-found p {
+  font-size: clamp(16px, 2.5vw, 20px);
+  color: #333;
+  margin-bottom: 30px;
+  max-width: 600px;
+}
+
+.back-home {
+  display: inline-block;
+  padding: 12px 24px;
+  background-color: #007bff;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 6px;
+  font-size: 16px;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.back-home:hover {
+  background-color: #0056b3;
+  transform: scale(1.05);
+}

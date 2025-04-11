@@ -1,0 +1,121 @@
+/* General Styles */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: url('/public/bg5.png') no-repeat center center fixed;
+  background-size: cover;
+  margin: 0;
+  padding: 0;
+}
+
+/* Container */
+.careers-container {
+  max-width: 600px;
+  margin: 50px auto;
+  background: rgba(255, 255, 255, 0.95);
+  padding: 30px 40px;
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  animation: fadeIn 0.8s ease-in-out;
+  background-image: url('/public/bg3.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  backdrop-filter: blur(3px); /* Optional: subtle glass effect */
+}
+
+/* Heading Styles */
+.careers-container h1 {
+  font-size: 2.5rem;
+  color: #aea22c;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.careers-container p {
+  font-size: 1.1rem;
+  color: #7f8c8d;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+/* Form Elements */
+.career-form label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: 600;
+  color: #aea22c;
+}
+
+.career-form input[type="text"],
+.career-form input[type="email"],
+.career-form select,
+.career-form textarea,
+.career-form input[type="file"] {
+  width: 100%;
+  padding: 10px 12px;
+  margin-bottom: 20px;
+  border: 1px solid #dcdfe6;
+  border-radius: 6px;
+  font-size: 1rem;
+  background-color: rgba(255, 255, 255, 0.9);
+  transition: border 0.3s, box-shadow 0.3s;
+}
+
+.career-form input:focus,
+.career-form select:focus,
+.career-form textarea:focus {
+  border-color: #3498db;
+  box-shadow: 0 0 5px rgba(52, 152, 219, 0.3);
+  outline: none;
+}
+
+/* Submit Button */
+.apply-button {
+  background-color: #aea22c;
+  color: #ffffff;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 6px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background 0.3s, transform 0.2s;
+  width: 100%;
+}
+
+.apply-button:hover {
+  background-color: rgb(77, 19, 24);
+  transform: scale(1.02);
+}
+
+/* Animation */
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+  .careers-container {
+    padding: 20px;
+  }
+
+  .careers-container h1 {
+    font-size: 2rem;
+  }
+
+  .career-form input,
+  .career-form select,
+  .career-form textarea {
+    font-size: 0.95rem;
+  }
+
+  .apply-button {
+    font-size: 0.95rem;
+  }
+}

@@ -1,0 +1,94 @@
+/* Container */
+.achievements-container {
+  padding: 40px;
+  background-color: #f4f4f9;
+  max-width: 1200px;
+  margin: 0 auto;
+  animation: fadeIn 0.6s ease-in-out;
+}
+
+/* Section Heading */
+h2 {
+  text-align: center;
+  font-size: 2.5rem;
+  color: #333;
+  margin-bottom: 30px;
+}
+
+/* Individual Achievement */
+.achievement-item {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  margin: 20px 0;
+  padding: 20px 25px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.achievement-item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 14px rgba(0, 0, 0, 0.12);
+}
+
+.achievement-item h3 {
+  font-size: 1.8rem;
+  color: rgb(77, 19, 24);
+  margin-bottom: 12px;
+}
+
+.achievement-item p {
+  font-size: 1.1rem;
+  color: #555;
+  line-height: 1.6;
+}
+
+.achievement-item ul {
+  padding-left: 20px;
+  margin-top: 10px;
+}
+
+.achievement-item ul li {
+  font-size: 1.1rem;
+  color: #555;
+  margin-bottom: 6px;
+  list-style-type: disc;
+}
+
+/* Fade-In Animation */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(15px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .achievements-container {
+    padding: 20px;
+    background-color: rgb(253, 237, 237);
+  }
+
+  h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+  }
+
+  .achievement-item {
+    padding: 15px 18px;
+  }
+
+  .achievement-item h3 {
+    font-size: 1.5rem;
+  }
+
+  .achievement-item p,
+  .achievement-item ul li {
+    font-size: 1rem;
+  }
+}
